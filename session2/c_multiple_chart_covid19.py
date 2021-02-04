@@ -38,7 +38,7 @@ deaths = deaths.groupby('Country/Region', as_index=False)
 deaths = deaths.sum()
 
 # Using the following list, we will create a set of plots
-countries = ('Spain', 'France', 'Colombia', 'United Kingdom')
+countries = ('Russian Federation', 'Colombia', 'United Kingdom')
 
 # The following empty dataset will contain all the integrated data set after processing data
 covid_data = pd.DataFrame(columns=['date', 'cases', 'kind', 'country'])

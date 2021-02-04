@@ -38,11 +38,11 @@ deaths = deaths.groupby('Country/Region', as_index=False)
 deaths = deaths.sum()
 
 # Using the following list, we will create different plots
-countries = ('Spain', 'France', 'Colombia', 'United Kingdom')
+countries = ('Colombia')
 
 # First, we will create line plots for a country
 # cumulative curve for a single country
-country = countries[2]
+country = countries[1]
 title = 'COVID-19 %s' % country
 #path = 'plots/cases_%s' % country
 confirmed_country = confirmed[confirmed['Country/Region'] == country]

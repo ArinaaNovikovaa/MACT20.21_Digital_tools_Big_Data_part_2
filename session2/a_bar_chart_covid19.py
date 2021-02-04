@@ -25,7 +25,7 @@ import seaborn as sns
 import numpy as np
 
 # Setting up data sources (files and web)
-gdp_growth = pd.read_csv('../data/WB_GDP_growth_anual.csv', skiprows=4)
+gdp_growth = pd.read_csv('../data/WB_GDP_growth_anual.csv', skiprows=5)
 jhu_link_confirmed = 'https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
 jhu_link_deaths = 'https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'
 confirmed = pd.read_csv(jhu_link_confirmed)
@@ -38,7 +38,7 @@ deaths = deaths.groupby('Country/Region', as_index=False)
 deaths = deaths.sum()
 
 # Using the following list, we will create different plots
-countries = ('Spain', 'France', 'Colombia', 'United Kingdom')
+countries = ('Germany', 'United Kingdom', 'Spain', 'France', 'Colombia')
 
 # First, we will create a bar plot for a single country
 # cumulative daily cases per country

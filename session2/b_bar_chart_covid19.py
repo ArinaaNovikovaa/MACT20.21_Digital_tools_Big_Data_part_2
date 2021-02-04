@@ -38,7 +38,7 @@ deaths = deaths.groupby('Country/Region', as_index=False)
 deaths = deaths.sum()
 
 # Using the following list, we will create different plots
-countries = ('Spain', 'France', 'Colombia', 'United Kingdom')
+countries = ('Russian Federation', 'France', 'Colombia', 'United Kingdom')
 
 # First, we will create bar plots for a country
 country = countries[0]
